@@ -1,0 +1,75 @@
+@import 'nav.css';
+@import 'main2.css';
+@import 'fish.css';
+@import 'tip.css';
+
+body {
+  background-color: goldenrod;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 100%;
+}
+
+.fishies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 68%;
+  justify-content: space-evenly;
+}
+
+.fish {
+  
+  background-color: #5995DA;
+  flex-basis: 25%;
+  width: 28%;
+  border: 1px solid red;
+  padding: 20px 10px 20px 10px;
+  border-radius: 25px; 
+  margin: 5px; 
+
+  {
+
+
+.fishies__card {
+  
+  background-color: #5995DA;
+  flex-basis: 28%;
+  width: 28%;
+  border: 1px solid red;
+  padding: 20px 10px 20px 10px;
+  border-radius: 25px; 
+  margin: 5px; 
+
+}
+
+aside{
+  flex-basis: 30%;
+  /*
+  border: 1px solid red;
+  padding: 0 5px;
+*/
+  border: solid 1px red;
+ /* padding: 20px 10px 20px 10px;  */
+  border-radius: 25px; 
+  margin: 5px; 
+
+
+}
+
+@media (max-width: 600px) {
+  .fishies {
+     flex-basis: 100%;
+  }
+
+  aside {
+     flex-basis: 100%;
+  }
+}
+
