@@ -1,32 +1,34 @@
 .fishies {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 68%;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 68%;
+  justify-content: space-evenly;
+}
+
+/* when I dont allow fishies__card it allows mouseover */
+/* when I do allow fishies__card it allows mouseover */
+.fishies__cardfff {
+  flex-basis: 28%;
+  width: 28%;
+  border: 2px dotted gray;
+  padding: 0 8px;
+  margin: 0 4px;
+  margin-bottom: 8px;
+}
+
+/* when I allow highlightFish it allows mouseover */
+.highlightFish {
+    background-color: blue ;
+    color: red;
+}
+
+
+@media (max-width: 600px) {
+  .fishies {
+     flex-basis: 100%;
   }
-  
-  .fishies__card {
-    flex-basis: 28%;
-    width: 28%;
-    border: 2px dotted gray;
-    padding: 0 8px;
-    margin: 0 4px;
-    margin-bottom: 8px;
+
+  aside {
+     flex-basis: 100%;
   }
-  
-  .highlightFish {
-      background-color: darkgoldenrod;
-      color: lightgoldenrodyellow;
-  }
-  
-  
-  @media (max-width: 600px) {
-    .fishies {
-       flex-basis: 100%;
-    }
-  
-    aside {
-       flex-basis: 100%;
-    }
-  }
- 
+}

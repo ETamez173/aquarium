@@ -1,7 +1,7 @@
 @import 'nav.css';
 @import 'main2.css';
 @import 'fish.css';
-@import 'tip.css';
+@import 'tip.css'; */
 
 body {
   background-color: goldenrod;
@@ -17,14 +17,17 @@ img {
   max-width: 100%;
 }
 
+/* when I allow fishies it allows mouseover */
 .fishies {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 68%;
+  flex-basis: 68%;s
   justify-content: space-evenly;
 }
 
-.fish {
+/* when I allow fish it allows mouseover but backgound does not change color only text changes */
+/* when I dont allow fish it allows full mouseover but the css styling for borders and rounded corners is ignored */
+.fishfff {
   
   background-color: #5995DA;
   flex-basis: 25%;
@@ -36,7 +39,7 @@ img {
 
   {
 
-
+/* when I dont allow fishies__card here it stills works */
 .fishies__card {
   
   background-color: #5995DA;

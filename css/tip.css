@@ -1,4 +1,4 @@
-
+/* 
 .fishies {
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +19,8 @@
     {
   
   
+  
+  
   .fishies__card {
     
     background-color: #5995DA;
@@ -29,7 +31,7 @@
     border-radius: 25px; 
     margin: 5px; 
   
-  }
+  } */
   
   aside{
     flex-basis: 30%;
@@ -47,17 +49,18 @@
   
 
   .tip {
-    background-color: darkgoldenrod;
+    /* background-color: darkgoldenrod; */
+    background-color: #5995DA;
     color: lightgoldenrodyellow;
 }
   @media (max-width: 600px) {
     .fishies {
        flex-basis: 100%;
     }
-  
+/*   
     aside {
        flex-basis: 100%;
     }
-  }
+  } */
   
   
