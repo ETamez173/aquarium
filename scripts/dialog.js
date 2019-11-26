@@ -16,77 +16,18 @@ const initializeDetailButtonEvents = () => {
 
     // You will be writing code below this line
 
-// Show Bart's details when the button is clicked
+    const allDetailButtons = document.querySelectorAll("button[id^='button--]")
 
-// 1
-document.querySelector("#button--jawsie").addEventListener(
-    "click",
-    theClickEvent => {
-      //  console.log("hi")
-        const theDialog = document.querySelector("#details--jawsie")
-        theDialog.showModal()
-    }
-)
-
-// 2
-
-document.querySelector("#button--dangles").addEventListener(
-    "click",
-    theClickEvent => {
-      
-        const theDialog = document.querySelector("#details--dangles")
-        theDialog.showModal()
-    }
-)
-
-// 3
-
-document.querySelector("#button--bubbles").addEventListener(
-    "click",
-    theClickEvent => {
-      
-        const theDialog = document.querySelector("#details--bubbles")
-        theDialog.showModal()
-    }
-)
-// 4
-
-document.querySelector("#button--barry").addEventListener(
-    "click",
-    theClickEvent => {
-      
-        const theDialog = document.querySelector("#details--barry")
-        theDialog.showModal()
-    }
-)
-
-// 5
-
-
-
-document.querySelector("#button--bitey").addEventListener(
-    "click",
-    theClickEvent => {
-      
-        const theDialog = document.querySelector("#details--bitey")
-        theDialog.showModal()
-    }
-)
-// 6
-
-
-
-document.querySelector("#button--snappy").addEventListener(
-    "click",
-    theClickEvent => {
-      
-        const theDialog = document.querySelector("#details--snappy")
-        theDialog.showModal()
-    }
-)
-
-
-
+    for (const btn of allDetailButtons) {
+        btn.addEventListener(
+            "click",
+            theEvent => {
+                const dialogSiblingSelector = `#${theEvent.target.id}+dialog`
+                const theDialog = document.querySelector(dialogSiblingSelector)
+                theDialog.showModal()
+            }
+        )
+}
 }
 
 export default initializeDetailButtonEvents

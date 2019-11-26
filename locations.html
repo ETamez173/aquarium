@@ -1,107 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/main.css"> 
+  <link rel="stylesheet" href="css/main2.css">
   <title>Document</title>
 </head>
+
 <body>
-    <nav >
-        <span>Martin's Fishy Fabulous Floppy Friends</span>
-       
-        <span class="nav__links"> 
-        <a class="nav__links" href="/">My Fish</a>
-        <a class="nav__links" href="locations.html">Locations</a>
-      </span>
-      
-      </nav>
+  <nav>
+    <span>Martin's Fishy Fabulous Floppy Friends</span>
+
+    <span class="nav__links">
+      <a href="/">My Fish</a>
+      <a href="locations.html">Locations</a>
+
+    </span>
+
+  </nav>
   <main>
     <h1 class="title_align">Locations</h1>
     <div class="location_tips">
       <!-- Martin's Tips on Travel to -->
-      
-         <h3 class="title_align">Martin's Travel Tips</h3>
-        <section class="travtips">
+
+      <h3 class="title_align">Martin's Travel Tips</h3>
+
+      <!-- <section class="travList"> -->
+      <!-- Sidebar of tank tips  done with auto features - remember the travTip error -->
+      <!-- const LocComponent = (travTip) => {
+            return `
+            <section class="travList">
+            <div class="travList2">
+                    <h4>${travTip.title}</h4> -->
+
+
+      <div class="travList"></div>
+      <!-- <section class="travtips"> -->
+      <!-- <div class="tipList"></div> -->
+
+     
+      <h3 class="title_align">Harvest Trips Taken by Martin</h3>
+     
+     
+      <div class="useHarv">
+ <!-- The Locations Martin Traveled to -->
+ <!-- This is where the automated javascript puts the HTML -->
+        <div class="harvList"></div>
+
+         <!-- The Locations Advise and Comments  -->
+ <!-- This is where the automated javascript puts the HTML -->
+        <div class="content_tips_2">
+            <div class="travAdvice"></div>
+          <p>TESTING TRAVEL TIPS COMMENTS</p>
+        </div>
+
+      </div>
+
+  <!-- <article class="trips">   
          
-         <p class="travTip">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat ac tincidunt vitae semper quis. Adipiscing commodo elit at imperdiet dui accumsan sit.</p>
-         <p class="travTip">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat ac tincidunt vitae semper quis. Adipiscing commodo elit at imperdiet dui accumsan sit.</p>
-         <p class="travTip">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat ac tincidunt vitae semper quis. Adipiscing commodo elit at imperdiet dui accumsan sit.</p>
-         <p class="travTip">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat ac tincidunt vitae semper quis. Adipiscing commodo elit at imperdiet dui accumsan sit.</p>
-        </section>
-    </div>
-    <!-- The Locations Martin Traveled to -->
-    <h3 class="title_align">Harvest Trips Taken by Martin</h3>
-    <div class="content_tips_2">
-
-    <article class="trips">
-
-      
-        <!-- <div class="fish">
-            <div>
-              <img class="fish__image" src="goldie-fish.jpg" alt="pic of a fish">
-            </div>
-            <div class="fish__name">Jawsie</div>
-            <div>
-              <button id="button--jawsieLoc">Details</button>
-            </div>
-  
-            <dialog class="dialog--fish" id="details--jawsieLoc">
-              <div>Species: Shark</div>
-              <div>Location: South Africa</div>
-              <div>Length: 264 in</div>
-              <div>Food: Seals</div>
-              <button class="button--close" id="close-jawsieLoc">Close Dialog</button>
-            </dialog>
-          </div> -->
+    </article> -->
 
 
-
-        <section class="harvest_trip">
-          <div class="tripPic"><img src="cancun_p1.jpg" alt="pic of a fish"></div>
-          <div class="tripCtyText">
-            <p>Cancun</p>
-            <p>Mexico</p>
-            <p>Latitude</p>
-            <p>Longitude</p>
-          </div>    
-        </section>  
-        <section class="harvest_trip">
-            <div class="tripPic"><img src="florida_p1.jpg" alt="pic of a fish"></div>
-            <div class="tripCtyText">
-            <p>Key West</p>
-            <p>USA</p>
-            <p>Latitude</p>
-            <p>Longitude</p>
-          </div>
-        </section>  
-        <section class="harvest_trip">
-            <div class="tripPic"><img src="china_p1.jpg" alt="pic of a fish"></div>
-            <div class="tripCtyText">
-            <p>Li</p>
-            <p>China</p>
-            <p>Latitude</p>
-            <p>Longitude</p>
-          </div>
-        </section>  
-        <section class="harvest_trip">
-            <div class="tripPic"><img src="thailand_p1.jpg" alt="pic of a fish"></div>
-            <div class="tripCtyText">
-            <p>City Bankok </p>
-            <p>Thailand</p>
-            <p>Latitude</p>
-            <p>Longitude</p>
-          </div>
-        </section>  
-         
-    </article>
-
-    </div>
-    
   </main>
-  <script type="module" src="./scripts/main.js"></script>  
+  <script type="module" src="/scripts/locations/main.js"></script>
   <!-- <script type="module" src="./scripts/dialogLoc.js"></script>  -->
 </body>
-</html>
 
+</html>

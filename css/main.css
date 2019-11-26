@@ -4,6 +4,9 @@
 @import 'tip.css'; */
 
 body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 20%;  
   background-color: goldenrod;
   box-sizing: border-box;
 }
@@ -11,6 +14,12 @@ body {
 .content {
   display: flex;
   flex-wrap: wrap;
+  /* flex-basis: 20%;  */
+  background-color: pink;
+  border: 1px solid red;
+  padding: 20px 10px 20px 10px;
+  border-radius: 25px; 
+  margin: 5px; 
 }
 
 img {
@@ -18,33 +27,35 @@ img {
 }
 
 /* when I allow fishies it allows mouseover */
-.fishies {
+.fishiesMM {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 68%;s
+  flex-basis: 68%;
   justify-content: space-evenly;
 }
 
 /* when I allow fish it allows mouseover but backgound does not change color only text changes */
 /* when I dont allow fish it allows full mouseover but the css styling for borders and rounded corners is ignored */
-.fishfff {
+.fishList {
   
-  background-color: #5995DA;
+  flex-wrap: wrap;
   flex-basis: 25%;
-  width: 28%;
-  border: 1px solid red;
-  padding: 20px 10px 20px 10px;
+  flex-direction: row; 
+  justify-content: space-evenly;
+  background-color: greenyellow;
+  border: 1px solid blue;
+  padding: 10px 10px 10px 10px;
   border-radius: 25px; 
   margin: 5px; 
+}
 
-  {
 
 /* when I dont allow fishies__card here it stills works */
-.fishies__card {
-  
+/* .fishies__card { */
+.fish {
   background-color: #5995DA;
   flex-basis: 28%;
-  width: 28%;
+  /* width: 28%; */
   border: 1px solid red;
   padding: 20px 10px 20px 10px;
   border-radius: 25px; 
@@ -58,7 +69,7 @@ aside{
   border: 1px solid red;
   padding: 0 5px;
 */
-  border: solid 1px red;
+  border: solid 1px blue;
  /* padding: 20px 10px 20px 10px;  */
   border-radius: 25px; 
   margin: 5px; 

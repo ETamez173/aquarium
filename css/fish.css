@@ -1,7 +1,10 @@
-.fishies {
+
+
+/* .fishies { */
+.fishListFFF {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 68%;
+  flex-basis: 25%;
   justify-content: space-evenly;
 }
 

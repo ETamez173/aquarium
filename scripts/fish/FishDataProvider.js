@@ -6,31 +6,31 @@ const fishCollection = [
         location: "Hawaii",
         length: 2,
         species: "Betta Fish",
-        img: "fish.jpg"
+        image: "/images/betta-fish.jpg" 
     },
-{
+    {
         name: "Tina",
         food: ["algae", "plankton"],
         location: "Morocco",
         length: 200,
         species: "Hammerhead Shark",
-        img: "fish.jpg"
+        image: "/images/hammerhead-shark.jpg" 
     },
-{
+    {
         name: "Bubbles",
         food: ["coral", "plankton"],
         location: "Djibouti",
         length: 20,
-        species: "Betta Fish",
-        img: "fish.jpg"
+        species: "Gold Fish",
+        image: "/images/goldfish-fish.jpg" 
     },
-{
+    {
         name: "Molly",
         food: ["fish flakes", "pizza"],
         location: "Harry's Fishworld",
         length: 2,
         species: "Black Molly",
-        img: "fish.jpg"
+        image: "/images/black-molly.jpg" 
     }
 ]
 
@@ -39,7 +39,10 @@ const fishCollection = [
 // This is new code. Add this.
 export const useFish = () => {
     return fishCollection
-
     
+}
+
+// export default useFish //
+// Steve spoke about on 112519 at 937am hear notes
 
     // immutability: our core, raw data should be private and hidden
